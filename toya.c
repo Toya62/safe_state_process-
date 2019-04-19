@@ -13,18 +13,17 @@ void main()
    smax=p+q;
    for(i=0;i<q;i++)
    {
-   //sum of all max[i]<p+q;
+
      if(i==0)
          max[i]=p-1;//random value which statisfies 2 conditions
      else 
          max[i]=1;
     }
-//allocate resources to processes
     for(i=0;i<q;i++)
     { 
     if(i==0)
-         alloc[i]=p-2; //based on bankers algo to avoid deadlock
-    else
+         alloc[i]=p-2;
+   else
          alloc[i]=0;
     }
 
